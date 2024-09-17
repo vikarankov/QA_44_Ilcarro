@@ -4,8 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class ApplicationManager {
+
     private WebDriver driver;
     public WebDriver getDriver(){
         return driver;
@@ -20,9 +22,9 @@ public class ApplicationManager {
 
     @AfterMethod
     public void tearDown(){
-        if (driver!=null){
-            driver.quit();
+      //  if(driver !=null){
+       //     driver.quit();
+       // }
 
-        }
     }
 }
